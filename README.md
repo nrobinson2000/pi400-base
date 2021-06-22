@@ -21,8 +21,8 @@ On a newly installed Manjaro ARM system clone this repository:
 
 ```bash
 $ sudo pacman -S git
-$ git clone https://github.com/nrobinson2000/arch-base
-$ cd arch-base
+$ git clone https://github.com/nrobinson2000/pi400-base
+$ cd pi400-base
 ```
 
 Before running `install.sh`, read through the script with your text editor and
