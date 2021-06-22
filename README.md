@@ -9,7 +9,7 @@ on [dwm.](https://dwm.suckless.org)
 ## Prerequisites
 
 - You will need a fresh installation of [Manjaro ARM
-  Minimal.](https://wiki.archlinux.org/index.php/Installation_guide)
+  Minimal.](https://manjaro.org/downloads/arm/raspberry-pi-4/arm8-raspberry-pi-4-minimal)
 
 - You should be comfortable navigating a terminal and using text editors like
   [Vim](https://wiki.archlinux.org/index.php/Vim) or
