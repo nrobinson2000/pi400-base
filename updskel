@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Save dotfiles under skel/ directory
+# or the directory specifed by $1
+OUTDIR="skel"
+[ -n "$1" ] && OUTDIR="$1"
+mkdir -p "$OUTDIR"
+
+# Files to copy from $HOME 
+DOTFILES=(
+.bash_aliases
+.bash_profile
+.bashrc
+.conkyrc
+.gitconfig
+.vimrc
+.xinitrc
+)
+
+# Copy each desired file from $HOME
+for file in "${DOTFILES[@]}"; do
+    cp "$HOME/$file" "$OUTDIR"
+done

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Save package lists under packages/ directory
+# or the directory specifed by $1
+OUTDIR="packages"
+[ -n "$1" ] && OUTDIR="$1"
+mkdir -p "$OUTDIR"
+
+# Create package lists
+pacman -Qenq > "$OUTDIR/native"
+pacman -Qemq > "$OUTDIR/aur"
+pacman -Qq > "$OUTDIR/all"
+
+# Package groups to exclude from list
+EXCLUDE_GROUPS=("base-devel" "texlive-most")
+
+# Remove group packages from list
+for group in "${EXCLUDE_GROUPS[@]}"; do
+    GROUP="$(pacman -Qqg "$group")"
+    for pkg in $GROUP; do
+        TMP="$(mktemp)"
+        grep -vx "$pkg" "$OUTDIR/native" > "$TMP"
+        mv "$TMP" "$OUTDIR/native"
+    done
+done
+
