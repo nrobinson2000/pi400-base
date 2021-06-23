@@ -42,6 +42,10 @@ echo "Applying customizations..."
 #sudo cp -r overlay/* /
 cp -r $(find skel -maxdepth 1 | tail +2) "$HOME"
 
+echo "Applying config.txt..."
+sudo mv "/boot/config.txt" "/boot/config.txt.orig"
+sudo cp "boot/config.txt" "/boot"
+
 #echo "Enabling services..."
 #cat systemd/services | xargs sudo systemctl enable
 

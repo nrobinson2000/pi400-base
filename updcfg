@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Save files under boot/ directory
+# or the directory specifed by $1
+OUTDIR="boot"
+[ -n "$1" ] && OUTDIR="$1"
+mkdir -p "$OUTDIR"
+
+# Files to copy from /boot
+FILES=(
+config.txt
+)
+
+# Copy each desired file from /boot
+for file in "${FILES[@]}"; do
+    cp "/boot/$file" "$OUTDIR"
+done
