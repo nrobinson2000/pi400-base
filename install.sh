@@ -41,6 +41,11 @@ make
 sudo make install
 popd
 
+echo "Installing vim-plug..."
+mkdir -p "$HOME/.vim/autoload"
+curl -fLo "$HOME/.vim/autoload/plug.vim" \
+    "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+
 echo "Applying customizations..."
 #sudo cp -r overlay/* /
 cp -r $(find skel -maxdepth 1 | tail +2) "$HOME"
