@@ -11,6 +11,7 @@ dfu-util
 dhcpcd
 dialog
 dmenu
+dzen2
 feh
 firefox
 firefox-ublock-origin

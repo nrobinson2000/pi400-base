@@ -26,9 +26,6 @@ sudo pacman -S --noconfirm --needed base-devel || exit
 echo "Installing native packages..."
 sudo pacman -S --noconfirm --needed - < packages/native || exit
 
-#echo "Installing custom packages..."
-#for pkg in custom-packages/*; do pushd $pkg; makepkg -sifc --noconfirm; popd; done
-
 echo "Installing AUR packages..."
 yay -S --removemake --noconfirm --needed - < packages/aur || exit
 
@@ -38,6 +35,12 @@ yay -Sc --noconfirm
 
 # Don't apply any customizations unless all packages were installed successfully
 
+echo "Installing dwm-setstatus..."
+pushd "src/dwm-setstatus"
+make
+sudo make install
+popd
+
 echo "Applying customizations..."
 #sudo cp -r overlay/* /
 cp -r $(find skel -maxdepth 1 | tail +2) "$HOME"
@@ -45,12 +48,6 @@ cp -r $(find skel -maxdepth 1 | tail +2) "$HOME"
 echo "Applying config.txt..."
 sudo mv "/boot/config.txt" "/boot/config.txt.orig"
 sudo cp "boot/config.txt" "/boot"
-
-#echo "Enabling services..."
-#cat systemd/services | xargs sudo systemctl enable
-
-#echo "Loading dconf settings..."
-#dconf load / < dconf/all.conf
 
 echo "Finished installation."
 echo "Please reboot for all changes to take effect."
