@@ -1,4 +1,5 @@
 acl
+adapta-backgrounds
 adapta-gtk-theme
 adobe-source-code-pro-fonts
 adwaita-icon-theme
@@ -20,12 +21,15 @@ audit
 autoconf
 automake
 avahi
+babl
 base
 bash
 bash-completion
 binutils
 bison
+blas
 bluez-libs
+boost-libs
 brcm-patchram-plus
 brotli
 btrfs-progs
@@ -62,6 +66,7 @@ dzen2
 e2fsprogs
 elfutils
 ell
+exiv2
 expat
 fakeroot
 feh
@@ -86,11 +91,16 @@ gc
 gcc
 gcc-libs
 gd
+gdb
+gdb-common
 gdbm
 gdk-pixbuf2
+gegl
 gettext
+ghostscript
 giblib
 giflib
+gimp
 git
 glib-networking
 glib2
@@ -102,12 +112,16 @@ gnutls
 gpgme
 gpm
 graphite
+graphviz
 grep
 groff
 gsettings-desktop-schemas
+gsfonts
 gsm
 gtk-update-icon-cache
+gtk2
 gtk3
+gts
 guile
 gumbo-parser
 gzip
@@ -121,6 +135,9 @@ hwids
 hwloc
 iana-etc
 icu
+ijs
+imagemagick
+imath
 imlib2
 inxi
 iproute2
@@ -130,6 +147,7 @@ iso-codes
 iwd
 jack
 jansson
+jasper
 jbig2dec
 jq
 js78
@@ -142,9 +160,11 @@ kodi-rpi
 krb5
 l-smash
 lame
+lapack
 lcms2
 ldb
 ldns
+lensfun
 less
 libaio
 libao
@@ -183,6 +203,7 @@ libffi
 libfontenc
 libftdi
 libgcrypt
+libgexiv2
 libglvnd
 libgpg-error
 libgudev
@@ -190,6 +211,7 @@ libheif
 libibus
 libice
 libid3tag
+libidn
 libidn2
 libiec61883
 libimagequant
@@ -197,11 +219,14 @@ libinput
 libjpeg-turbo
 libksba
 libldap
+liblqr
 libmicrohttpd
 libmm-glib
+libmng
 libmnl
 libmodplug
 libmpc
+libmypaint
 libndp
 libnetfilter_conntrack
 libnewt
@@ -228,6 +253,7 @@ libproxy
 libpsl
 libpulse
 libraqm
+libraw
 libraw1394
 librsvg
 libsamplerate
@@ -240,6 +266,7 @@ libsndfile
 libsodium
 libsoup
 libsoxr
+libspiro
 libssh
 libssh2
 libsynctex
@@ -261,6 +288,7 @@ libvorbis
 libvpx
 libwacom
 libwebp
+libwmf
 libx11
 libxau
 libxaw
@@ -291,6 +319,7 @@ libxtst
 libxv
 libxxf86vm
 licenses
+links
 linux-api-headers
 linux-firmware
 linux-rpi4
@@ -304,6 +333,7 @@ lsb-release
 lua
 lua52
 lua53
+luajit-git
 lz4
 lzo
 m4
@@ -317,6 +347,7 @@ manjaro-release
 manjaro-system
 mariadb-libs
 mesa
+metis
 mkinitcpio
 mkinitcpio-busybox
 mobile-broadband-provider-info
@@ -325,11 +356,13 @@ mpv
 mtdev
 mujs
 mupdf
+mypaint-brushes1
 nano
 ncdu
 ncurses
 neofetch
 neopo-git
+netpbm
 nettle
 networkmanager
 nmap
@@ -343,6 +376,7 @@ nss
 ntfs-3g
 oniguruma
 opencore-amr
+openexr
 openjpeg2
 openmpi
 openssh
@@ -391,6 +425,8 @@ plymouth
 plymouth-theme-manjaro
 polkit
 poppler
+poppler-data
+poppler-glib
 popt
 potrace
 procps-ng
@@ -438,6 +474,7 @@ shellcheck-bin
 slang
 smbclient
 sound-theme-freedesktop
+source-highlight
 speedtest-cli
 speex
 speexdsp
@@ -446,6 +483,7 @@ sqlite
 srt
 st-git
 sudo
+suitesparse
 sxiv
 sysfsutils
 systemd
@@ -455,6 +493,7 @@ t1lib
 taglib
 talloc
 tar
+tbb
 tdb
 tevent
 texinfo

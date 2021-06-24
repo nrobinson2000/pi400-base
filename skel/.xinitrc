@@ -1,6 +1,9 @@
 # Apply Adapta GTK theme
 export GTK_THEME="Adapta:dark"
 
+# Apply wallpaper
+feh --no-fehbg --bg-scale '/usr/share/backgrounds/adapta/tealized.jpg' 
+
 # Ensures that $HOME is the working directory
 cd
 

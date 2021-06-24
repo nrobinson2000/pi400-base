@@ -4,7 +4,8 @@ gpu_mem=64
 initramfs initramfs-linux.img followkernel
 kernel=kernel8.img
 arm_64bit=1
-# disable_overscan=1
+
+disable_overscan=1
 
 #enable sound
 dtparam=audio=on

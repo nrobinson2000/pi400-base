@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Save files under src/ directory
+# or the directory specifed by $1
+OUTDIR="src"
+[ -n "$1" ] && OUTDIR="$1"
+mkdir -p "$OUTDIR"
+
+
+# Directories to copy config.h from
+DIRS=(
+dwm
+st
+)
+
+# Copy each desired file from $HOME
+for dir in "${DIRS[@]}"; do
+    mkdir -p "$OUTDIR/$dir"
+    cp "$HOME/$dir/config.h" "$OUTDIR/$dir/config.h"
+done
