@@ -1,5 +1,5 @@
 # pi400-base
-![](shots/2.png)
+![](shots/6.png)
 
 This repository is a post-installation setup script for [Manjaro
 ARM](https://wiki.manjaro.org/index.php/Manjaro-ARM) that installs and

@@ -8,7 +8,13 @@ theme: Madrid
 ![The Raspberry Pi 400 Computer](rpi400.jpg)
 
 # Introduction
-![Running firefox, htop, journalctl, and neofetch in dwm](../shots/2.png)
+![Empty desktop in dwm](../shots/4.png)
+
+# Introduction
+![Floating windows in dwm](../shots/6.png)
+
+# Introduction
+![Tiled windows in dwm](../shots/7.png)
 
 # Introduction
 
