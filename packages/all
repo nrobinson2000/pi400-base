@@ -33,6 +33,7 @@ boost-libs
 brcm-patchram-plus
 brotli
 btrfs-progs
+byobu
 bzip2
 c-ares
 ca-certificates
@@ -72,6 +73,7 @@ fakeroot
 feh
 ffmpeg
 fftw
+figlet
 file
 filesystem
 findutils
@@ -281,6 +283,7 @@ libunistring
 libunwind
 libusb
 libusb-compat
+libutempter
 libuv
 libva
 libvdpau
@@ -500,6 +503,7 @@ texinfo
 texlive-bin
 texlive-core
 tinyxml
+tmux
 tree
 ttf-liberation
 tzdata

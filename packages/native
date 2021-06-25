@@ -5,6 +5,7 @@ base
 bash-completion
 brcm-patchram-plus
 btrfs-progs
+byobu
 clang
 conky
 dfu-util
@@ -13,6 +14,7 @@ dialog
 dmenu
 dzen2
 feh
+figlet
 firefox
 firefox-ublock-origin
 firmware-raspberrypi
