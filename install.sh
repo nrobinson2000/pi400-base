@@ -33,6 +33,9 @@ echo "Cleaning up..."
 sudo pacman -Rcns --noconfirm $(pacman -Qqdtt)
 yay -Sc --noconfirm
 
+echo "Updating SSL certificates..."
+sudo update-ca-trust
+
 # Don't apply any customizations unless all packages were installed successfully
 
 echo "Installing dwm-setstatus..."
@@ -41,13 +44,29 @@ make
 sudo make install
 popd
 
+echo "Installing custom dwm and st..."
+CWD="$PWD"
+pushd "$HOME"
+yay -G dwm-git st-git
+
+pushd "dwm-git"
+cp -f "$CWD/src/dwm/config.h" "config.h"
+makepkg -Asif
+popd
+
+pushd "st-git"
+cp -f "$CWD/src/st/config.h" "config.h"
+makepkg -Asif
+popd
+
+popd # $HOME
+
 echo "Installing vim-plug..."
 mkdir -p "$HOME/.vim/autoload"
 curl -fLo "$HOME/.vim/autoload/plug.vim" \
     "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 
 echo "Applying customizations..."
-#sudo cp -r overlay/* /
 cp -r $(find skel -maxdepth 1 | tail +2) "$HOME"
 
 echo "Applying config.txt..."
@@ -56,3 +75,6 @@ sudo cp "boot/config.txt" "/boot"
 
 echo "Finished installation."
 echo "Please reboot for all changes to take effect."
+
+echo "To complete the installation of vim-plug run the following:"
+echo "vim -c PlugInstall"
