@@ -1,3 +1,2 @@
-[user]
-	name = Nathan Robinson
-	email = nrobinson2000@me.com
+[init]
+	defaultBranch = master
